@@ -1,3 +1,4 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* ANTI GESER */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* BODY */
 body {
     min-height: 100vh;
     background: linear-gradient(
@@ -16,14 +24,7 @@ body {
         #92a8d1 100%
     );
     color: #2e2e2e;
-body {
-    font-family: 'Poppins', sans-serif;
 }
-
-  
-}
-
-
 
 /* NAVBAR */
 .navbar {
@@ -61,14 +62,11 @@ body {
 
 .nav-menu a:hover,
 .nav-menu a.active {
-    background: linear-gradient(
-        135deg,
-    
-        #92a8d1
-    );
+    background: #92a8d1;
     color: #ffffff;
 }
 
+/* PROFILE IMAGE */
 .profile-img {
     width: 300px;
     height: 300px;
@@ -92,6 +90,7 @@ body {
     background: rgba(255, 255, 255, 0.7);
 }
 
+/* TEXT */
 h1 {
     font-size: 52px;
     color: #985b5a;
@@ -157,15 +156,16 @@ footer {
 .home-layout {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* BUKAN CENTER */
+    justify-content: space-between;
     gap: 100px;
+    flex-wrap: wrap;
 }
 
 /* IMAGE */
 .home-image {
     flex: 1;
     display: flex;
-    justify-content: flex-start; /* KIRI */
+    justify-content: center;
 }
 
 .home-image img {
@@ -173,37 +173,38 @@ footer {
     height: 300px;
     object-fit: cover;
     border-radius: 50%;
-    margin-left: 90px;
- 
 }
 
 /* TEXT */
 .home-text {
     flex: 2;
-    text-align: left; /* KIRI */
-     padding-right: 60px;
+    text-align: left;
+    padding-right: 60px;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE (TETAP SESUAI DESAIN) */
 @media (max-width: 768px) {
     .home-layout {
         flex-direction: column;
-        align-items: flex-start; /* BUKAN CENTER */
+        align-items: center;
     }
 
     .home-text {
         margin-top: 20px;
+        text-align: center;
+        padding-right: 0;
     }
 }
 
-/* ABOUT ME TEXT */
+/* ABOUT */
 .about-text {
-    text-align: justify;          /* RATA KANAN KIRI */
+    text-align: justify;
     text-justify: inter-word;
     line-height: 1.9;
     margin-top: 20px;
 }
 
+/* SOCIAL */
 .social-icons {
     display: flex;
     justify-content: center;
@@ -214,7 +215,7 @@ footer {
 .social-icon {
     width: 60px;
     height: 60px;
-    background: #92a8d1; /* satu warna, nyatu sama bg */
+    background: #92a8d1;
     border-radius: 50%;
     display: flex;
     align-items: center;
