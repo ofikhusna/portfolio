@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(
+        180deg,
+        #f7cac9 0%,
+        #dec2cb 25%,
+        #c5b9cd 50%,
+        #abb1cf 75%,
+        #92a8d1 100%
+    );
+    color: #2e2e2e;
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+  
+}
+
+
+
+/* NAVBAR */
+.navbar {
+    margin: 30px 40px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 14px 30px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 18px;
+    color: #92a8d1;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #555;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background: linear-gradient(
+        135deg,
+    
+        #92a8d1
+    );
+    color: #ffffff;
+}
+
+.profile-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* CONTAINER */
+.container {
+    margin: 40px;
+    padding: 60px;
+    border-radius: 24px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(12px);
+}
+
+.container.light {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+h1 {
+    font-size: 52px;
+    color: #985b5a;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #546687;
+}
+
+p {
+    max-width: 720px;
+    margin: auto;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* TAGS */
+.tags span {
+    display: inline-block;
+    background: rgba(255,255,255,0.85);
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin: 8px;
+    font-size: 13px;
+    color: #555;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.card {
+    background: rgba(255,255,255,0.9);
+    padding: 30px;
+    border-radius: 20px;
+    font-weight: 600;
+    color: #555;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* FOOTER */
+footer {
+    margin: 40px;
+    padding: 40px;
+    border-radius: 24px;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #c5b9cd,
+        #92a8d1
+    );
+    color: #ffffff;
+}
+
+/* HOME LAYOUT */
+.home-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* BUKAN CENTER */
+    gap: 100px;
+}
+
+/* IMAGE */
+.home-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; /* KIRI */
+}
+
+.home-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 90px;
+ 
+}
+
+/* TEXT */
+.home-text {
+    flex: 2;
+    text-align: left; /* KIRI */
+     padding-right: 60px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .home-layout {
+        flex-direction: column;
+        align-items: flex-start; /* BUKAN CENTER */
+    }
+
+    .home-text {
+        margin-top: 20px;
+    }
+}
+
+/* ABOUT ME TEXT */
+.about-text {
+    text-align: justify;          /* RATA KANAN KIRI */
+    text-justify: inter-word;
+    line-height: 1.9;
+    margin-top: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.social-icon {
+    width: 60px;
+    height: 60px;
+    background: #92a8d1; /* satu warna, nyatu sama bg */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 26px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.social-icon:hover {
+    transform: translateY(-6px);
+    background: #546687;
+}
